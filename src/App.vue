@@ -1,28 +1,21 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <header>
+      <h1>3D Model Viewer</h1>
+    </header>
+    <main>
+      <ModelViewerContainer />  <!-- Updated name here -->
+    </main>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import ModelViewerContainer from './components/ModelViewer.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    ModelViewerContainer  // Make sure the name matches here
   }
 }
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
